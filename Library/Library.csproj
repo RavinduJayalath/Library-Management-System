@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A97B98B7-C7C7-4784-B414-9DF07C62907F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminHome.Designer.cs">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdnewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdnewBook.Designer.cs">
+      <DependentUpon>AdnewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdRegister.Designer.cs">
+      <DependentUpon>AdRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdRemovebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdRemovebook.Designer.cs">
+      <DependentUpon>AdRemovebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdReturnBook.Designer.cs">
+      <DependentUpon>AdReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdUnreturned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdUnreturned.Designer.cs">
+      <DependentUpon>AdUnreturned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOA.Designer.cs">
+      <DependentUpon>FOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOB.Designer.cs">
+      <DependentUpon>FOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOT.Designer.cs">
+      <DependentUpon>FOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.cs" />
+    <Compile Include="StHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StHome.Designer.cs">
+      <DependentUpon>StHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminHome.resx">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdnewBook.resx">
+      <DependentUpon>AdnewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdRegister.resx">
+      <DependentUpon>AdRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdRemovebook.resx">
+      <DependentUpon>AdRemovebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdReturnBook.resx">
+      <DependentUpon>AdReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdUnreturned.resx">
+      <DependentUpon>AdUnreturned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOA.resx">
+      <DependentUpon>FOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOB.resx">
+      <DependentUpon>FOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOT.resx">
+      <DependentUpon>FOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StHome.resx">
+      <DependentUpon>StHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
